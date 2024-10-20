@@ -47,7 +47,7 @@ function Login() {
             </label>
           </div>
           <div className="mb-6 text-blue-500">
-            <a href="#" className="hover:underline">
+            <a href="/forgot-password" className="hover:underline">
               Forgot Password?
             </a>
           </div>
@@ -59,7 +59,7 @@ function Login() {
           </button>
         </form>
         <div className="mt-6 text-green-500 text-center">
-          <a href="#" className="hover:underline">
+          <a href="/sign-up" className="hover:underline">
             Sign up Here
           </a>
         </div>
