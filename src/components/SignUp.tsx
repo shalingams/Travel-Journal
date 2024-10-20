@@ -9,8 +9,20 @@ function SignUp() {
         />
       </div>
       <div className="lg:p-36 md:p-52 sm:20 p-8 w-full lg:w-1/2">
-        <h1 className="text-2xl font-semibold mb-4">Login</h1>
+        <h1 className="text-4xl font-semibold mb-4 uppercase">Sign Up</h1>
         <form action="#" method="POST">
+          <div className="mb-4 bg-sky-100">
+            <label htmlFor="full_name" className="block text-gray-600">
+              Full name
+            </label>
+            <input
+              type="text"
+              id="full_name"
+              name="full_name"
+              className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+              autoComplete="off"
+            />
+          </div>
           <div className="mb-4 bg-sky-100">
             <label htmlFor="username" className="block text-gray-600">
               Username
@@ -35,34 +47,25 @@ function SignUp() {
               autoComplete="off"
             />
           </div>
-          <div className="mb-4 flex items-center">
-            <input
-              type="checkbox"
-              id="remember"
-              name="remember"
-              className="text-red-500"
-            />
-            <label htmlFor="remember" className="text-green-900 ml-2">
-              Remember Me
+          <div className="mb-4">
+            <label htmlFor="confirm_password" className="block text-gray-800">
+              Confirm Password
             </label>
-          </div>
-          <div className="mb-6 text-blue-500">
-            <a href="#" className="hover:underline">
-              Forgot Password?
-            </a>
+            <input
+              type="password"
+              id="confirm_password"
+              name="confirm_password"
+              className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
+              autoComplete="off"
+            />
           </div>
           <button
             type="submit"
             className="bg-red-500 hover:bg-blue-600 text-white font-semibold rounded-md py-2 px-4 w-full"
           >
-            Login
+            Sign up
           </button>
         </form>
-        <div className="mt-6 text-green-500 text-center">
-          <a href="#" className="hover:underline">
-            Sign up Here
-          </a>
-        </div>
       </div>
     </div>
   );
