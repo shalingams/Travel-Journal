@@ -4,7 +4,7 @@ function SignUp() {
       <div className="w-1/2 h-screen hidden lg:block">
         <img
           src="/images/SignUp.png"
-          alt="Placeholder Image"
+          alt="Registration"
           className="object-cover w-full h-full"
         />
       </div>

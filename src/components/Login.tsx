@@ -4,7 +4,7 @@ function Login() {
       <div className="w-1/2 h-screen hidden lg:block">
         <img
           src="/images/travel.png"
-          alt="Placeholder Image"
+          alt="Login user"
           className="object-cover w-full h-full"
         />
       </div>

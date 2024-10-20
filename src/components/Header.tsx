@@ -9,7 +9,7 @@ function Header() {
       "
         >
           <div className="h-10 w-10 self-center mr-2">
-            <img className="h-10 w-10 self-center" src="/images/logo.png" />
+            <img className="h-10 w-10 self-center" src="/images/logo.png" alt="logo" />
           </div>
           <div>
             <Link
