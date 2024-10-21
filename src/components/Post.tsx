@@ -5,7 +5,12 @@ function Post(post: PostType) {
   console.log(post);
   return (
     <div className="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
-      <img src={image} alt={location} className="rounded-t-lg w-full" />
+      <img
+        src={image}
+        alt={location}
+        className="rounded-t-lg w-full"
+        loading="lazy"
+      />
       <div className="p-6">
         <h1 className="md:text-1xl text-xl hover:text-indigo-600 transition duration-200  font-bold text-gray-900 ">
           {location}

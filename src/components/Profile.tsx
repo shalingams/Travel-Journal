@@ -11,6 +11,7 @@ function Profile() {
             src="https://vojislavd.com/ta-template-demo/assets/img/profile-background.jpg"
             className="w-full h-full rounded-tl-lg rounded-tr-lg"
             alt="background"
+            loading="lazy"
           />
         </div>
         <div className="flex flex-col items-center -mt-20">
@@ -18,6 +19,7 @@ function Profile() {
             src="/images/1715110978434.jpg"
             className="w-40 border-4 border-white rounded-full"
             alt="profile"
+            loading="lazy"
           />
           <div className="flex items-center space-x-2 mt-2">
             <p className="text-2xl">{fullName}</p>
