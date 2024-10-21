@@ -1,6 +1,13 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 
 function Header() {
+  const navigate = useNavigate();
+  const username = window.localStorage.getItem("tj-username");
+  console.log(username);
+  const logout = () => {
+    window.localStorage.removeItem("tj-username");
+    navigate("/login")
+  }
   return (
     <div>
       <nav className="font-Overlock flex flex-col text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 bg-white shadow sm:items-baseline w-full">
@@ -43,18 +50,29 @@ function Header() {
             >
               Contact
             </Link>
-            <Link
-              to="/sign-up"
-              className="text-lg no-underline text-grey-darkest hover:text-blue-600 ml-2 hover:uppercase"
-            >
-              Sign up
-            </Link>
-            <Link
-              to="/login"
-              className="text-md no-underline text-grey-darker hover:text-blue-600 ml-2 px-1 hover:uppercase"
-            >
-              Login
-            </Link>
+            {username ? (
+              <span
+                onClick={logout}
+                className="text-md no-underline text-grey-darker hover:text-blue-600 ml-2 px-1 hover:uppercase hover:cursor-pointer"
+              >
+                Log out
+              </span>
+            ) : (
+              <>
+                <Link
+                  to="/sign-up"
+                  className="text-lg no-underline text-grey-darkest hover:text-blue-600 ml-2 hover:uppercase"
+                >
+                  Sign up
+                </Link>
+                <Link
+                  to="/login"
+                  className="text-md no-underline text-grey-darker hover:text-blue-600 ml-2 px-1 hover:uppercase"
+                >
+                  Login
+                </Link>
+              </>
+            )}
           </div>
         </div>
       </nav>
