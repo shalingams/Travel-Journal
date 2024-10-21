@@ -1,6 +1,6 @@
 function SignUp() {
   return (
-    <div className="bg-sky-100 flex justify-center items-center h-screen">
+    <div className="font-Overlock bg-sky-100 flex justify-center items-center h-screen">
       <div className="w-1/2 h-screen hidden lg:block">
         <img
           src="/images/SignUp.png"

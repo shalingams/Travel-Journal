@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function HomePage() {
   return (
     <>
-      <div className="w-screen h-screen overflow-hidden relative before:block before:absolute before:bg-black before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30">
+      <div className="font-Overlock w-screen h-screen overflow-hidden relative before:block before:absolute before:bg-black before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30">
         <img
           src="/images/hero.png"
           className="absolute top-0 left-0 min-h-full w-screen"
@@ -11,10 +11,10 @@ function HomePage() {
         />
         <div className="relative z-20 max-w-screen-lg mx-auto grid grid-cols-12 h-full items-center">
           <div className="col-span-6">
-            <span className="uppercase text-white text-xs font-bold mb-2 block">
+            <span className="uppercase text-white text-xs font-Overlock mb-2 block">
               WE ARE EXPERTS
             </span>
-            <h1 className="text-white font-extrabold text-5xl mb-8">
+            <h1 className="text-white font-Overlock text-5xl mb-8">
               Memories we made along the way
             </h1>
             <p className="text-stone-100 text-base mb-10">
@@ -34,7 +34,7 @@ function HomePage() {
       <div className="py-12 relative overflow-hidden bg-white">
         <div className="grid grid-cols-2 max-w-screen-lg mx-auto">
           <div className="w-full flex flex-col items-end pr-16">
-            <h2 className="text-[#64618C] font-bold text-2xl max-w-xs text-right mb-12 mt-10">
+            <h2 className="text-[#64618C] font-Overlock text-2xl max-w-xs text-right mb-12 mt-10">
               Travel tips
             </h2>
             <div className="h-full mt-auto overflow-hidden relative">
@@ -48,7 +48,7 @@ function HomePage() {
 
           <div className="py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-sky-950 before:top-0 before:left-0">
             <div className="relative z-20 pl-12">
-              <h2 className="text-[#f7d0b6] font-black text-5xl leading-snug mb-10">
+              <h2 className="text-[#f7d0b6] font-Overlock text-5xl leading-snug mb-10">
                 Share your <br />
                 experiences
               </h2>
@@ -65,7 +65,7 @@ function HomePage() {
         <div className="grid grid-cols-2 max-w-screen-lg mx-auto">
           <div className="py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-[#f7d0b6] before:top-0 before:right-0">
             <div className="relative z-20 pl-12">
-              <h2 className="text-sky-950 font-black text-5xl leading-snug mb-10">
+              <h2 className="text-sky-950 font-Overlock text-5xl leading-snug mb-10">
                 Contact "Mike"
                 <br />
                 from Bali
@@ -82,7 +82,7 @@ function HomePage() {
             </div>
           </div>
           <div className="w-full flex flex-col pl-16">
-            <h2 className="text-[#64618C] font-bold text-2xl max-w-xs text-left mb-12 mt-10">
+            <h2 className="text-[#64618C] font-Overlock text-2xl max-w-xs text-left mb-12 mt-10">
               Share your local contacts
             </h2>
             <div className="h-full mt-auto overflow-hidden relative">
@@ -99,7 +99,7 @@ function HomePage() {
       <div className="py-12 relative overflow-hidden bg-white">
         <div className="grid grid-cols-2 max-w-screen-lg mx-auto">
           <div className="w-full flex flex-col items-end pr-16">
-            <h2 className="text-[#64618C] font-bold text-2xl max-w-xs text-right mb-12 mt-10">
+            <h2 className="text-[#64618C] font-Overlock text-2xl max-w-xs text-right mb-12 mt-10">
               Next month I'm traveling to...
             </h2>
             <div className="h-full mt-auto overflow-hidden relative">
@@ -113,7 +113,7 @@ function HomePage() {
 
           <div className="py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-sky-950 before:top-0 before:left-0">
             <div className="relative z-20 pl-12">
-              <h2 className="text-[#f7d0b6] font-black text-5xl leading-snug mb-10">
+              <h2 className="text-[#f7d0b6] font-Overlock text-5xl leading-snug mb-10">
                 Tell about your travel plans
               </h2>
               <p className="text-white text-sm">
