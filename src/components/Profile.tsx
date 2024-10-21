@@ -17,6 +17,7 @@ function Profile() {
           <img
             src="/images/1715110978434.jpg"
             className="w-40 border-4 border-white rounded-full"
+            alt="profile"
           />
           <div className="flex items-center space-x-2 mt-2">
             <p className="text-2xl">{fullName}</p>
