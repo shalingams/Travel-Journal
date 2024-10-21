@@ -10,6 +10,7 @@ function Profile() {
           <img
             src="https://vojislavd.com/ta-template-demo/assets/img/profile-background.jpg"
             className="w-full h-full rounded-tl-lg rounded-tr-lg"
+            alt="background"
           />
         </div>
         <div className="flex flex-col items-center -mt-20">
