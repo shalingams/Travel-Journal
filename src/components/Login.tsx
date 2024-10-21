@@ -18,7 +18,8 @@ function Login() {
   const loginUser = (event: any) => {
     setError("");
     if (username === "shalinga" && password === "1234567890") {
-      window.localStorage.setItem("tj-username", username)
+      window.localStorage.setItem("tj-username", username);
+      window.localStorage.setItem("tj-fileName", "Shalinga Manasinghe");
       navigate("/profile")
     } else {
       setError("Invalid username or password");

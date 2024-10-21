@@ -3,9 +3,11 @@ import { Link, Outlet, useNavigate } from "react-router-dom";
 function Header() {
   const navigate = useNavigate();
   const username = window.localStorage.getItem("tj-username");
-  console.log(username);
+  const fullName = window.localStorage.getItem("tj-fileName");
+
   const logout = () => {
     window.localStorage.removeItem("tj-username");
+    window.localStorage.removeItem("tj-fullName");
     navigate("/login")
   }
   return (
@@ -51,12 +53,20 @@ function Header() {
               Contact
             </Link>
             {username ? (
-              <span
-                onClick={logout}
-                className="text-md no-underline text-grey-darker hover:text-blue-600 ml-2 px-1 hover:uppercase hover:cursor-pointer"
-              >
-                Log out
-              </span>
+              <>
+                <Link
+                  to="/profile"
+                  className="text-md no-underline text-grey-darker hover:text-blue-600 ml-2 px-1 hover:uppercase hover:cursor-pointer"
+                >
+                  {fullName}
+                </Link>
+                <span
+                  onClick={logout}
+                  className="text-md no-underline text-grey-darker hover:text-blue-600 ml-2 px-1 hover:uppercase hover:cursor-pointer"
+                >
+                  Log out
+                </span>
+              </>
             ) : (
               <>
                 <Link

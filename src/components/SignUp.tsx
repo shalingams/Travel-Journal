@@ -70,6 +70,7 @@ function SignUp() {
   const registration = () => {
     if (validateInput() && validatePassword()) {
       window.localStorage.setItem("tj-username", username);
+      window.localStorage.setItem("tj-fullName", fullName);
       navigate("/profile");
     }
   };
