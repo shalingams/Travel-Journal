@@ -1,7 +1,9 @@
 export interface PostType {
+  id: string;
   image: string;
   location: string;
   description: string;
+  likes: number;
 }
 
 export interface User {
