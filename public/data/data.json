@@ -4,62 +4,62 @@
     "image": "/data/1.jpg",
     "location": "This is Amazing for people to visit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quis.",
-    "likes": "10"
+    "likes": "100K"
   },
   {
     "id": "asdadasdada2qweascaw",
     "image": "/data/2.jpg",
     "location": "This is Amazing for people to visit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quis.",
-    "likes": "10"
+    "likes": "10K"
   },
   {
     "id": "asdadasdada3qweascaw",
     "image": "/data/3.jpg",
     "location": "This is Amazing for people to visit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quis.",
-    "likes": "10"
+    "likes": "2K"
   },
   {
     "id": "asdadasdada4qweascaw",
     "image": "/data/4.jpg",
     "location": "This is Amazing for people to visit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quis.",
-    "likes": "10"
+    "likes": "1K"
   },
   {
     "id": "asdadasdada5qweascaw",
     "image": "/data/5.jpg",
     "location": "This is Amazing for people to visit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quis.",
-    "likes": "10"
+    "likes": "1000"
   },
   {
     "id": "asdadasdada6qweascaw",
     "image": "/data/6.jpg",
     "location": "This is Amazing for people to visit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quis.",
-    "likes": "10"
+    "likes": "50k"
   },
   {
     "id": "asdadasdada7qweascaw",
     "image": "/data/7.jpg",
     "location": "This is Amazing for people to visit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quis.",
-    "likes": "10"
+    "likes": "9k"
   },
   {
     "id": "asdadasdada8qweascaw",
     "image": "/data/8.jpg",
     "location": "This is Amazing for people to visit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quis.",
-    "likes": "10"
+    "likes": "984"
   },
   {
     "id": "asdadasdada9qweascaw",
     "image": "/data/9.jpg",
     "location": "This is Amazing for people to visit.",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quis.",
-    "likes": "10"
+    "likes": "500"
   }
 ]
