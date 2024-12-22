@@ -1,13 +1,14 @@
 import './App.css';
 import Header from './components/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import HomePage from './components/HomePage';
+import HomePage from './Pages/HomePage';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
-import About from './components/About';
-import Contact from './components/Contact';
-import NoPage from './components/NoPage';
-import Profile from './components/Profile';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import NoPage from './Pages/NoPage';
+import Profile from './Pages/Profile';
+import NewPost from './Pages/NewPost';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="sign-up" element={<SignUp />} />
           <Route path="profile" element={<Profile />} />
+          <Route path="users/:username" element={<Profile />} />
+          <Route path="posts/new" element={<NewPost />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
