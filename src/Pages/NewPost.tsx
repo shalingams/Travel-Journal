@@ -1,4 +1,4 @@
-import { useState, FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 
 function NewPost() {
   const [uploadedFiles, setUploadedFiles] = useState<string[]>([]);
@@ -41,7 +41,9 @@ function NewPost() {
       return;
     }
 
+    // biome-ignore lint/style/noNonNullAssertion: <explanation>
     for (let i = 0; i < files!.length; i++) {
+      // biome-ignore lint/style/noNonNullAssertion: <explanation>
       filePath.push(URL.createObjectURL(files![i]));
     }
     if (files && files.length > 0) {
@@ -216,6 +218,7 @@ function NewPost() {
                       <span>
                         {tag}
                       </span>
+                      {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
                       <span className="cursor-pointer" onClick={() => removeTag(tags.indexOf(tag))}>x</span>
                     </span>
                   ))}
@@ -227,6 +230,7 @@ function NewPost() {
                   className="mx-auto cursor-pointer flex w-full max-w-lg flex-col items-center justify-center rounded-xl border-2 border-dashed border-blue-400 bg-white p-6 text-center"
                   htmlFor="dropzone-file"
                 >
+                  {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-10 w-10 text-blue-800"
@@ -279,6 +283,7 @@ function NewPost() {
             <div className="grid grid-cols-6 col-span-2 gap-2 justify-center items-center">
               {uploadedFiles.length > 0 && (
                 <div className="overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
+                  {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
                   <img
                     className="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 h-full w-full object-cover cursor-pointer"
                     src={uploadedFiles[0]}
@@ -289,6 +294,7 @@ function NewPost() {
               )}
               {uploadedFiles.length > 1 && (
                 <div className="overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
+                  {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
                   <img
                     className="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300h-full w-full object-cover cursor-pointer"
                     src={uploadedFiles[1]}
@@ -299,6 +305,7 @@ function NewPost() {
               )}
               {uploadedFiles.length > 2 && (
                 <div className=" overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
+                  {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
                   <img
                     className="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 h-full w-full object-cover cursor-pointer"
                     src={uploadedFiles[2]}
@@ -309,6 +316,7 @@ function NewPost() {
               )}
               {uploadedFiles.length > 3 && (
                 <div className=" overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
+                  {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
                   <img
                     className="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 h-full w-full object-cover cursor-pointer"
                     src={uploadedFiles[3]}
@@ -319,6 +327,7 @@ function NewPost() {
               )}
               {uploadedFiles.length > 4 && (
                 <div className="relative overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
+                  {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
                   <img
                     className="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 h-full w-full object-cover cursor-pointer"
                     src={uploadedFiles[4]}

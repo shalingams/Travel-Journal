@@ -64,6 +64,7 @@ function Header() {
                 >
                   {fullName}
                 </Link>
+                {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
                 <span
                   onClick={logout}
                   className="text-md no-underline text-grey-darker hover:text-blue-600 ml-2 px-1 hover:uppercase hover:cursor-pointer"

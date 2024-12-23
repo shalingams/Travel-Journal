@@ -1,11 +1,11 @@
-import { PostType } from "../utils/types";
+import type { PostType } from "../utils/types";
 
 function Post(post: PostType) {
   const { id, image, description, location, likes } = post;
 
   const isNotLiked = () => {
     const postId = id?.match(/\d/)?.[0] || "0";
-    return parseInt(postId) % 2 === 0;
+    return Number.parseInt(postId) % 2 === 0;
   };
   return (
     <div className="container mx-auto shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
@@ -23,6 +23,7 @@ function Post(post: PostType) {
         <div className="flex gap-1">
           
         {isNotLiked()
+        // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
         ? <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -37,6 +38,7 @@ function Post(post: PostType) {
           d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
         />
       </svg>
+        // biome-ignore lint/a11y/noSvgWithoutTitle: <explanation>
         : <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
