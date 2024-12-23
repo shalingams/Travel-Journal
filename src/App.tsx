@@ -9,6 +9,7 @@ import Contact from './Pages/Contact';
 import NoPage from './Pages/NoPage';
 import Profile from './Pages/Profile';
 import NewPost from './Pages/NewPost';
+import Search from './Pages/Search';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="profile" element={<Profile />} />
           <Route path="users/:username" element={<Profile />} />
           <Route path="posts/new" element={<NewPost />} />
+          <Route path="search" element={<Search />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

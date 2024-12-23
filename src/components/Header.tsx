@@ -1,4 +1,5 @@
 import { Link, Outlet, useNavigate } from "react-router-dom";
+import Footer from "./Footer";
 
 function Header() {
   const navigate = useNavigate();
@@ -37,6 +38,12 @@ function Header() {
 
         <div className="sm:mb-0 self-center">
           <div className="flex h-10 justify-center items-center">
+            <Link
+              to="/search"
+              className="text-md no-underline text-black hover:text-blue-600 ml-2 px-1 hover:uppercase"
+            >
+              Travelers
+            </Link>
             <Link
               to="/about"
               className="text-md no-underline text-black hover:text-blue-600 ml-2 px-1 hover:uppercase"
@@ -84,6 +91,7 @@ function Header() {
         </div>
       </nav>
       <Outlet />
+      <Footer />
     </div>
   );
 }
