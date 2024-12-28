@@ -64,7 +64,7 @@ function Contact() {
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-xl">
-      <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">Contact Us</h1>
+      <h1 className="text-3xl font-bold text-center mb-8 text-pink-500">Contact Us</h1>
       <form onSubmit={handleSubmit} className="space-y-6 bg-sky-950 p-10 rounded-lg bg-opacity-70">
         <div>
           <label 

@@ -76,7 +76,7 @@ function SignUp() {
   };
 
   return (
-    <div className="font-Overlock bg-sky-100 flex justify-center items-center h-screen">
+    <div className="font-Overlock flex justify-center items-center h-screen">
       <div className="w-1/2 h-screen hidden lg:block">
         <img
           src="/images/SignUp.png"
@@ -85,15 +85,15 @@ function SignUp() {
         />
       </div>
       <div className="lg:p-36 md:p-52 sm:20 p-8 w-full lg:w-1/2">
-        <h1 className="text-4xl font-semibold mb-4 uppercase">Sign Up</h1>
-        <form action="#" method="POST">
+        <h1 className="text-4xl font-semibold mb-4 uppercase text-pink-500">Sign Up</h1>
+        <form action="#" method="POST" className="space-y-6 bg-sky-950 p-10 rounded-lg bg-opacity-70">
           <div className="mb-4">
             {error && (
               <span className="text-md text-red-800 italic">{error}</span>
             )}
           </div>
-          <div className="mb-4 bg-sky-100">
-            <label htmlFor="full_name" className="block text-gray-600">
+          <div className="mb-4">
+            <label htmlFor="full_name" className="block text-pink-500 uppercase">
               Full name
             </label>
             <input
@@ -106,8 +106,8 @@ function SignUp() {
               onChange={handleFullNameChange}
             />
           </div>
-          <div className="mb-4 bg-sky-100">
-            <label htmlFor="username" className="block text-gray-600">
+          <div className="mb-4">
+            <label htmlFor="username" className="block text-pink-500 uppercase">
               Username
             </label>
             <input
@@ -128,7 +128,7 @@ function SignUp() {
             )}
           </div>
           <div className="mb-4">
-            <label htmlFor="password" className="block text-gray-800">
+            <label htmlFor="password" className="block text-pink-500 uppercase">
               Password
             </label>
             <input
@@ -141,7 +141,7 @@ function SignUp() {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="confirm_password" className="block text-gray-800">
+            <label htmlFor="confirm_password" className="block text-pink-500 uppercase">
               Confirm Password
             </label>
             <input
@@ -155,7 +155,9 @@ function SignUp() {
           </div>
           <button
             type="button"
-            className="bg-red-500 hover:bg-blue-600 text-white font-semibold rounded-md py-2 px-4 w-full"
+            className="w-full 
+              mt-10 text-white uppercase bg-pink-500 bg-opacity-70 py-4 text-base font-light px-10 border border-white hover:bg-purple-500 hover:bg-opacity-70
+              transition duration-300 ease-in-out"
             onClick={registration}
           >
             Sign up
