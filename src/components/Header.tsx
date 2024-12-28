@@ -11,7 +11,7 @@ function Header() {
     navigate("/login")
   }
   return (
-    <div className="h-screen">
+    <div className="min-h-screen">
       <nav className="border-b border-gray-200 font-Overlock flex flex-col text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 bg-black shadow sm:items-baseline w-full">
         <div className="mb-2 sm:mb-0 flex flex-row">
           <div className="h-10 w-10 self-center mr-2">
