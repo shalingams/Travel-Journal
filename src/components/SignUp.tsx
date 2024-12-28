@@ -89,7 +89,7 @@ function SignUp() {
         <form action="#" method="POST" className="space-y-6 bg-sky-950 p-10 rounded-lg bg-opacity-70">
           <div className="mb-4">
             {error && (
-              <span className="text-md text-red-800 italic">{error}</span>
+              <span className="text-lg text-red-300 italic">{error}</span>
             )}
           </div>
           <div className="mb-4">

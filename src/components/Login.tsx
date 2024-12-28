@@ -39,10 +39,13 @@ function Login() {
         <h1 className="text-4xl font-semibold mb-4 uppercase text-pink-500">
           Login
         </h1>
-        {error && (
-          <span className="text-red-800 text-sm italic p-5">{error}</span>
-        )}
+
         <form className="space-y-6 bg-sky-950 p-10 rounded-lg bg-opacity-70">
+          <div className="mb-4">
+            {error && (
+              <span className="text-lg text-red-300 italic p-5">{error}</span>
+            )}
+          </div>
           <div className="mb-4">
             <label htmlFor="username" className="block text-pink-500 uppercase">
               Username
