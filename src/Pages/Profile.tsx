@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import Gallery from "../components/Gallery";
-
+import Footer from "../components/Footer";
+import { motion } from "framer-motion";
 function Profile() {
   let { username } = useParams();
   let publicProfile = true;
@@ -13,24 +14,25 @@ function Profile() {
 
   return (
     <>
-      <div className="bg-white rounded-lg shadow-xl pb-8">
-        <div className="w-full h-[250px]">
-          <img
-            src="https://vojislavd.com/ta-template-demo/assets/img/profile-background.jpg"
-            className="w-full h-full rounded-tl-lg rounded-tr-lg"
-            alt="background"
-            loading="lazy"
-          />
+      <div className="pb-8 bg-sky-950 bg-opacity-70">
+        <div className="w-full h-64 bg-transparent bg-cover bg-clip-border bg-center">
+          <img src="/images/banner.webp" alt="" className="w-full h-64 object-cover overflow-hidden" />
         </div>
         <div className="flex flex-col items-center -mt-20">
-          <img
+          <motion.img
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.4,
+                scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+            }}
             src="/images/1715110978434.jpg"
-            className="w-40 border-4 border-white rounded-full"
+            className="w-40 border-4 border-pink-500 rounded-full"
             alt="profile"
             loading="lazy"
           />
           <div className="flex items-center space-x-2 mt-2">
-            <p className="text-2xl">{fullName}</p>
+            <p className="text-2xl uppercase text-purple-200 font-Overlock">{fullName}</p>
             <span className="bg-blue-500 rounded-full p-1" title="Verified">
               {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
               <svg
@@ -50,13 +52,13 @@ function Profile() {
               </svg>
             </span>
           </div>
-          <p className="text-sm text-gray-500">{username}</p>
+          <p className="text-md text-purple-200 font-Overlock uppercase decoration-4">{username}</p>
         </div>
         <div className="flex-1 flex flex-col items-center lg:items-end justify-end px-8 mt-2">
           {publicProfile ? (
             <div className="flex items-center space-x-4 mt-2">
               {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
-              <button className="flex items-center bg-blue-600 hover:bg-blue-700 text-gray-100 px-4 py-2 rounded text-sm space-x-2 transition duration-100">
+              <button className="flex items-center uppercase bg-purple-400 bg-opacity-70 border border-white hover:bg-pink-400 hover:bg-opacity-70 text-black px-4 py-2 rounded text-sm space-x-2 transition duration-100">
                 {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +72,7 @@ function Profile() {
                 <span>Connect</span>
               </button>
               {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
-              <button className="flex items-center bg-blue-600 hover:bg-blue-700 text-gray-100 px-4 py-2 rounded text-sm space-x-2 transition duration-100">
+              <button className="flex items-center uppercase bg-purple-400 bg-opacity-70 border border-white hover:bg-pink-400 hover:bg-opacity-70 text-black px-4 py-2 rounded text-sm space-x-2 transition duration-100">
                 {/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -90,9 +92,10 @@ function Profile() {
             </div>
           ) : (
             <div className="flex items-center space-x-4 mt-2">
-              <Link to={"/posts/new"} className="flex items-center bg-blue-600 hover:bg-blue-700 text-gray-100 px-4 py-2 rounded text-sm space-x-2 transition duration-100">
+              
+              <Link to={"/posts/new"} className="flex items-center uppercase bg-purple-400 bg-opacity-70 border border-white hover:bg-pink-400 hover:bg-opacity-70 text-black px-4 py-2 rounded text-sm space-x-2 transition duration-100">
                 <svg
-                  className="w-6 h-6 text-white dark:text-white"
+                  className="w-6 h-6 text-black dark:text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -117,9 +120,9 @@ function Profile() {
                 <span>New Post</span>
               </Link>
               {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
-              <button className="flex items-center bg-blue-600 hover:bg-blue-700 text-gray-100 px-4 py-2 rounded text-sm space-x-2 transition duration-100">
+              <button className="flex items-center uppercase bg-purple-400 bg-opacity-70 border border-white hover:bg-pink-400 hover:bg-opacity-70 text-black px-4 py-2 rounded text-sm space-x-2 transition duration-100">
                 <svg
-                  className="w-6 h-6 text-white dark:text-white"
+                  className="w-6 h-6 text-black dark:text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -143,6 +146,7 @@ function Profile() {
         </div>
       </div>
       <Gallery />
+      <Footer />
     </>
   );
 }

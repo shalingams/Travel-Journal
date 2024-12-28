@@ -25,7 +25,7 @@ function App() {
 
   return (
     <motion.div
-      className="bg-gradient-to-r from-[#E0F7FA] to-[#B3E5FC]"
+      className="bg-gradient-to-r from-[#04a49c] to-[#00d4ff] font-Overlock"
       variants={container}
       initial="hidden"
       animate="show"
