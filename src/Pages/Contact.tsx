@@ -65,13 +65,13 @@ function Contact() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-xl">
       <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">Contact Us</h1>
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={handleSubmit} className="space-y-6 bg-sky-950 p-10 rounded-lg bg-opacity-70">
         <div>
           <label 
             htmlFor="name" 
-            className="block text-sm font-medium text-gray-700 mb-2"
+            className="block text-lg uppercase font-medium text-pink-500 mb-2"
           >
-            Name
+            Name <span className='text-sm'>*</span>
           </label>
           <input
             type="text"
@@ -88,16 +88,16 @@ function Contact() {
             `}
           />
           {errors.name && (
-            <p className="mt-1 text-sm text-red-600">{errors.name}</p>
+            <p className="mt-1 text-lg text-red-300">{errors.name}</p>
           )}
         </div>
 
         <div>
           <label 
             htmlFor="email" 
-            className="block text-sm font-medium text-gray-700 mb-2"
+            className="block text-lg uppercase font-medium text-pink-500 mb-2"
           >
-            Email
+            Email <span className='text-sm'>*</span>
           </label>
           <input
             type="email"
@@ -114,16 +114,16 @@ function Contact() {
             `}
           />
           {errors.email && (
-            <p className="mt-1 text-sm text-red-600">{errors.email}</p>
+            <p className="mt-1 text-lg text-red-300">{errors.email}</p>
           )}
         </div>
 
         <div>
           <label 
             htmlFor="message" 
-            className="block text-sm font-medium text-gray-700 mb-2"
+            className="block text-lg uppercase font-medium text-pink-500 mb-2"
           >
-            Message
+            Message <span className='text-sm'>*</span>
           </label>
           <textarea
             id="message"
@@ -140,7 +140,7 @@ function Contact() {
             `}
           />
           {errors.message && (
-            <p className="mt-1 text-sm text-red-600">{errors.message}</p>
+            <p className="mt-1 text-lg text-red-300">{errors.message}</p>
           )}
         </div>
 
@@ -148,11 +148,8 @@ function Contact() {
           <button 
             type="submit" 
             className="
-              w-full py-3 px-4 
-              bg-blue-600 text-white font-semibold 
-              rounded-md shadow-md 
-              hover:bg-blue-700 
-              focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
+              w-full 
+              mt-10 text-white uppercase bg-pink-500 bg-opacity-70 py-4 text-base font-light px-10 border border-white hover:bg-purple-500 hover:bg-opacity-70
               transition duration-300 ease-in-out
             "
           >

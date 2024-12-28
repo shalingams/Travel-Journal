@@ -25,7 +25,7 @@ function App() {
 
   return (
     <motion.div
-      className="bg-gradient-to-r from-purple-500 to-pink-500"
+      className="bg-gradient-to-r from-[#E0F7FA] to-[#B3E5FC]"
       variants={container}
       initial="hidden"
       animate="show"

@@ -118,7 +118,7 @@ function HomePage() {
         </div>
       </div>
 
-      <div className="py-12 relative overflow-hidden">
+      <div className="py-12 relative overflow-hidden bg-pink-500 bg-opacity-40">
         <div className="grid grid-cols-2 max-w-screen-lg mx-auto">
           <div className="w-full flex flex-col items-end pr-16">
             <h2 className="text-purple-200 font-Overlock text-5xl max-w-xs text-right mb-12 mt-10 decoration-4">
